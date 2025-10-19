@@ -1,0 +1,178 @@
+*{
+margin:0%;
+padding:0%;
+box-sizing: border-box;
+}
+html,body{
+width: 100%;
+height: 100%;
+background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+}
+
+/* division1-grid */
+/* Navbar layout (inside .div1) */
+.div1 {
+    grid-column: 1 / 8;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+/* Logo */
+.logo h1 {
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Navigation links */
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.nav-links span {
+    font-size: 1rem;
+    cursor: pointer;
+}
+.nav-links span:hover {
+    text-decoration: underline;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+button {
+    height: 5vh;
+    width: auto;
+    padding: 0 1.5rem;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+}
+#search {
+    background-color: #e4e4e4;
+    transition: 0.3s;
+}
+#signin {
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+
+}
+#search:hover {
+    background-color: #959697;
+}
+#signin:hover {
+    background-color: rgb(80, 134, 184);
+    color: rgb(0, 0, 0);
+}
+
+/* Responsive Navbar */
+@media (max-width: 900px) {
+  .div1 {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .nav-links {
+    justify-content: center;
+  }
+
+  .buttons {
+    justify-content: center;
+  }
+
+  button {
+    width: 40vw;
+  }
+}
+
+/* division2-grid */
+.div2{
+    background-color: white;
+    display: grid;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+.div2 h1{
+    margin-top: -20px;
+    font-size: 4rem;
+}
+.div2 h3{
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+.div2 button{
+    margin-top: -2rem;
+    margin-bottom: 3rem;
+    transition: 0.3s;
+}
+.div2 button:hover{
+    background-color: rgb(132, 129, 129);
+}
+.div2 {
+    grid-column: span 3 / span 3;
+    grid-row: span 7 / span 7;
+    grid-row-start: 2;
+}
+/* division3-grid */
+.div3 img{
+    height: 50vh;
+    width: 28vw;
+    background-size: cover;
+    border-radius: 10px;
+    margin-top: -10px;
+}
+.div3 {
+    grid-column: span 2 / span 2;
+    grid-row: span 4 / span 4;
+    grid-column-start: 6;
+    grid-row-start: 2;
+}
+/* division4-grid */
+.div4 img{
+    height: 50vh;
+    width: 28vw;
+    background-size: cover;
+    border-radius: 10px;
+    margin-top: -40px;
+}
+.div4 {
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+    grid-column-start: 6;
+    grid-row-start: 6;
+}
+/* division5-grid */
+.div5 img{
+    height: 80vh;
+    width: 25vw;
+    background-size: cover;
+    border-radius: 10px;
+    margin-top: -45px;
+}
+.div5 {
+    grid-column: span 2 / span 2;
+    grid-row: span 5 / span 5;
+    grid-column-start: 4;
+    grid-row-start: 3;
+}
+        
