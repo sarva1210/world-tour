@@ -1,13 +1,13 @@
 *{
-margin:0%;
-padding:0%;
-box-sizing: border-box;
+    margin:0%;
+    padding:0%;
+    box-sizing: border-box;
 }
 html,body{
-width: 100%;
-height: 100%;
-background-color: rgb(255, 255, 255);
-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
 .parent {
@@ -16,7 +16,7 @@ color: rgb(0, 0, 0);
     grid-template-rows: repeat(8, 1fr);
 }
 
-/* division1-grid */
+division1-grid
 /* Navbar layout (inside .div1) */
 .div1 {
     grid-column: 1 / 8;
@@ -45,9 +45,6 @@ color: rgb(0, 0, 0);
 .nav-links span {
     font-size: 1rem;
     cursor: pointer;
-}
-.nav-links span:hover {
-    text-decoration: underline;
 }
 
 /* Buttons */
@@ -82,28 +79,6 @@ button {
     color: rgb(0, 0, 0);
 }
 
-/* Responsive Navbar */
-@media (max-width: 900px) {
-  .div1 {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
-    text-align: center;
-    gap: 1rem;
-  }
-
-  .nav-links {
-    justify-content: center;
-  }
-
-  .buttons {
-    justify-content: center;
-  }
-
-  button {
-    width: 40vw;
-  }
-}
-
 /* division2-grid */
 .div2{
     background-color: white;
@@ -126,7 +101,7 @@ button {
     transition: 0.3s;
 }
 .div2 button:hover{
-    background-color: rgb(132, 129, 129);
+    background-color: #abaaaa;
 }
 .div2 {
     grid-column: span 3 / span 3;
@@ -175,5 +150,173 @@ button {
     grid-column-start: 4;
     grid-row-start: 3;
 }
-/* next grid */
-        
+/* 2nd parent */
+.nav-links2{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 2rem;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+.nav-links2 button:hover{
+    background-color: #abaaaa;
+}
+.parent2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    margin-left: 20px;
+    gap: 8px;
+}
+/* division6-grid  */
+.div6 img{
+    height: 70vh;
+    width: 22vw;
+    background-size: cover;
+    border-radius: 10px;
+    margin-top: 10px;
+}    
+.div6 {
+    grid-row: span 4 / span 4;
+}
+
+/* division7-grid */
+.div7 img{
+    height: 70vh;
+    width: 22vw;
+    background-size: cover;
+    border-radius: 10px;
+    margin-top: 10px;
+} 
+.div7 {
+    grid-row: span 4 / span 4;
+}
+/* division8-grid */
+.div8 img{
+    height: 70vh;
+    width: 22vw;
+    background-size: cover;
+    border-radius: 10px;
+    margin-top: 10px;
+} 
+.div8 {
+    grid-row: span 4 / span 4;
+}
+/* division9-grid */
+.div9 img{
+    height: 70vh;
+    width: 22vw;
+    background-size: cover;
+    border-radius: 10px;
+    margin-top: 10px;
+} 
+.div9 {
+    grid-row: span 4 / span 4;
+}
+
+/* responsive
+/*MOBILE VIEW (max-width: 639px)*/
+@media (max-width: 639px) {
+
+  /* Layout base */
+  body, html {
+    overflow-x: hidden;
+  }
+
+  .parent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  /* Navbar */
+  .div1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border-bottom: 1px solid #ddd;
+  }
+  .logo h1 {
+    font-size: 1.2rem;
+  }
+  .nav-links {
+    display: none; /* hidden in mobile */
+ }
+  .buttons {
+    display: flex;
+    gap: 0.6rem;
+  }
+  .buttons button {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.5rem;
+  }
+
+  /* Hero Section (div2) */
+  .div2 {
+    text-align: center;
+    padding: 1.2rem 0.8rem;
+  }
+  .div2 h1 {
+    font-size: 1.8rem;
+    line-height: 1.3;
+    margin-bottom: 0.5rem;
+  }
+  .div2 h3 {
+    font-size: 0.95rem;
+    color: #444;
+    margin-bottom: 1.2rem;
+  }
+  .div2 button {
+    width: 70%;
+    padding: 0.7rem;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    margin-top: 0.1rem;
+  } 
+
+  /* Image Section (div3–div5) */
+.div3, .div4, .div5 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .div3 img, .div4 img, .div5 img {
+    width: 85%;
+    height: 35vh;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 3rem;
+  } 
+
+  /* Subgrid (parent2) */
+   .parent2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+  }
+  .parent2 img {
+    width: 85%;
+    height: 32vh;
+    object-fit: cover;
+    border-radius: 15px;
+  } 
+
+  /* Buttons & Text (Top Destinations section) */
+   .nav-links2 {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  .nav-links2 button {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
+    border-radius: 50px;
+  }
+} 
