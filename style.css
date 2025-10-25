@@ -166,7 +166,8 @@ button {
     grid-column-start: 4;
     grid-row-start: 3;
 }
-/* 2nd parent */
+
+/************* 2nd parent ***************/
 .nav-links2{
     display: flex;
     justify-content: center;
@@ -230,6 +231,7 @@ button {
 .div9 {
     grid-row: span 4 / span 4;
 }
+/************ 3rd parent ****************/
 .t2 button{
     display: flex;
     justify-content: center;
@@ -238,8 +240,74 @@ button {
     margin-top: -40px;
     flex-wrap: wrap;
     cursor: pointer;
+    background-color: white;
+    border: 1px solid black;
+    padding-top: 2px;
     transition: 0.3s;
 }   
 .t2 button:hover{
-    background-color: #abaaaa;
-} 
+    background-color: #cdcbcb;
+}
+
+/* grid section */
+.parent3 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 8px;
+    margin-top: 30px;
+}
+
+/* grid10 */
+.div10 img{
+    height: 62vh;
+    width: 43vw;
+    border-radius: 30px;
+    object-fit: cover;
+}
+.div10 { 
+    grid-column: span 3 / span 3;
+    grid-row: span 4 / span 4;
+}
+
+/* grid11 */
+.div11 img{
+    height: 30vh;
+    width: 20vw;
+    border-radius: 30px;
+    object-fit: cover;
+}
+.div11 {
+    grid-column: span 3 / span 3;
+    grid-row: span 2 / span 2;
+    grid-column-start: 4;
+}
+/* grid12 */
+.div12 img{
+    height: 30vh;
+    width: 20vw;
+    border-radius: 30px;
+    margin-top: -70px;
+    object-fit: cover;
+}
+.div12 {
+    grid-column: span 3 / span 3;
+    grid-row: span 2 / span 2;
+    grid-column-start: 4;
+    grid-row-start: 3;
+}
+
+/* grid13 */
+.div13 img{
+    height: 30vh;
+    width: 20vw;
+    border-radius: 30px;
+    margin-top: -140px;
+    object-fit: cover;
+}
+.div13 {
+    grid-column: span 3 / span 3;
+    grid-row: span 2 / span 2;
+    grid-column-start: 4;
+    grid-row-start: 5;
+}
