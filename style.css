@@ -238,53 +238,65 @@ button {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(5, 1fr);
-    margin-left: 20px;
+    margin-left: 2px;
     gap: 8px;
 }
 /* division6-grid  */
 .div6 img{
     height: 70vh;
     width: 22vw;
+    padding: 10px;
     background-size: cover;
-    border-radius: 10px;
+    border-radius: 30px;
     margin-top: 10px;
 }    
 .div6 {
     grid-row: span 4 / span 4;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    border-radius: 20px;
 }
 
 /* division7-grid */
 .div7 img{
     height: 70vh;
     width: 22vw;
+    padding:10px ;
     background-size: cover;
-    border-radius: 10px;
+    border-radius: 30px;
     margin-top: 10px;
 } 
 .div7 {
     grid-row: span 4 / span 4;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    border-radius: 20px;
 }
 /* division8-grid */
 .div8 img{
     height: 70vh;
     width: 22vw;
     background-size: cover;
-    border-radius: 10px;
+    padding: 10px;
+    border-radius: 30px;
     margin-top: 10px;
 } 
 .div8 {
     grid-row: span 4 / span 4;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    border-radius: 20px;
 }
 /* division9-grid */
 .div9 img{
     height: 70vh;
     width: 22vw;
     background-size: cover;
-    border-radius: 10px;
+    padding: 10px;
+    border-radius: 30px;
     margin-top: 10px;
 } 
 .div9 {
     grid-row: span 4 / span 4;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    border-radius: 20px;
 }
 /************ 3rd parent ****************/
 .t2 button{
